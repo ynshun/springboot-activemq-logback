@@ -29,7 +29,7 @@ public class Receiver {
 	}
 
 	// 监听指定消息主题
-	@JmsListener(destination = "purchase.mall.log.queue11111", containerFactory = "jmsListenerContainerQueue")
+	@JmsListener(destination = "purchase.mall.log.queue", containerFactory = "jmsListenerContainerQueue")
 	public void receiveQueue(Message msg) {
 		try {
 			if (msg instanceof ActiveMQTextMessage) {

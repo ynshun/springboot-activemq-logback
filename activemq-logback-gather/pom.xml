@@ -61,18 +61,15 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
-					<verbose>true</verbose>
-					<encoding>utf-8</encoding>
+					<mainClass>com.softisland.LogbackActiveMQStarter</mainClass>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
-	
+
 	<profiles>
 		<profile>
 			<!-- mvn clean compile install -P prod -Dmaven.test.skip=true -->
@@ -96,6 +93,6 @@
 			</properties>
 		</profile>
 	</profiles>
-	
-	
+
+
 </project>
